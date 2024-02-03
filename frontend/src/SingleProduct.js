@@ -17,9 +17,10 @@ const SingleProduct = () => {
     price,
     description, 
     category, 
-    reviews,
+    stock,
     stars,  
-    stock
+    reviews
+
   } = singleProduct;
   
   useEffect(() => {
@@ -27,7 +28,7 @@ const SingleProduct = () => {
   }, []);
 
   return (
-    <h1>single page</h1>
+    <h1>single page {name}</h1>
   );
 }
 
