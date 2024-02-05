@@ -44,7 +44,7 @@ const SingleProduct = () => {
         <div className="grid grid-two-column">
           {/* product image */}
           <div className="product_images">
-            <MyImage imgs={image} />
+            <MyImage images={image} />
           </div>
 
           {/* product data */}
@@ -99,6 +99,12 @@ const Wrapper = styled.section`
   .container {
     padding: 9rem 0;
   }
+
+  .product_images {
+    display: flex;
+    align-item: center;
+  }
+
   .product-data {
     display: flex;
     flex-direction: column;
